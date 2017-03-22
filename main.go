@@ -1,9 +1,9 @@
 package main
 
 import (
-	_ "github.com/trinchan/slackbot/importer"
-	"github.com/trinchan/slackbot/robots"
-	"github.com/trinchan/slackbot/server"
+	_ "github.com/matt-deboer/slackbot/importer"
+	"github.com/matt-deboer/slackbot/robots"
+	"github.com/matt-deboer/slackbot/server"
 )
 
 func main() {

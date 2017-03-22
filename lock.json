@@ -1,0 +1,21 @@
+{
+    "memo": "e5012e12ef7aecefcb5edc45031439905655e94ebe39eee8566d92fac895d080",
+    "projects": [
+        {
+            "name": "github.com/gorilla/schema",
+            "branch": "master",
+            "revision": "f3c80893412cff6b5596a82f3cb8c31c5a971aa9",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/trinchan/slackbot",
+            "branch": "master",
+            "revision": "777e82ac89fbba71bc64c02e48aba7062b773c8e",
+            "packages": [
+                "robots"
+            ]
+        }
+    ]
+}

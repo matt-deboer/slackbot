@@ -8,9 +8,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/trinchan/slackbot/Godeps/_workspace/src/github.com/gorilla/schema"
-	_ "github.com/trinchan/slackbot/importer"
-	"github.com/trinchan/slackbot/robots"
+	"github.com/gorilla/schema"
+	"github.com/matt-deboer/slackbot/robots"
 )
 
 func Main(robotMap map[string][]robots.Robot) {
