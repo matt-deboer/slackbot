@@ -127,9 +127,16 @@ func startServer() {
 	if port == "" {
 		log.Fatal("PORT not set")
 	}
-	log.Printf("Starting HTTP server on %s", port)
-	err := http.ListenAndServe(":"+port, nil)
-	if err != nil {
-		log.Fatal("Server start error: ", err)
+	ssl_cert_path := os.Getenv("SLACK_SSL_CERT_PATH")
+	ssl_host_name := os.Getenv("SLACK_SSL_HOST_NAME")
+	if ssl_cert_path != "" && ssl_host_name != "" {
+		log.Printf("Starting HTTP server on https://%s:%s with SSL support", port)
+		StartServerSSL()
+	} else {
+		log.Printf("Starting HTTP server on %s", port)
+		err := http.ListenAndServe(":"+port, nil)
+		if err != nil {
+			log.Fatal("Server start error: ", err)
+		}
 	}
 }

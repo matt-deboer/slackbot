@@ -8,6 +8,7 @@ import (
 	"net/url"
 	"os"
 	"strings"
+	"time"
 )
 
 type SlashCommand struct {
@@ -76,6 +77,16 @@ type Attachment struct {
 	Color      string            `json:"color,omitempty"`
 	Fields     []AttachmentField `json:"fields,omitempty"`
 	MarkdownIn []MarkdownField   `json:"mrkdown_in,omitempty"`
+	AuthorName string            `json:"author_name,omitempty"`
+	AuthorLink string            `json:"author_link,omitempty"`
+	AuthorIcon string            `json:"author_icon,omitempty"`
+	Title      string            `json:"title,omitempty"`
+	TitleLink  string            `json:"title_link,omitempty"`
+	ImageUrl   string            `json:"image_url,omitempty"`
+	ThumbUrl   string            `json:"thumb_url,omitempty"`
+	Footer     string            `json:"footer,omitempty"`
+	FooterIcon string            `json:"footer_icon,omitempty"`
+	Ts         time.Time         `json:"ts,omitempty"`
 }
 
 type MarkdownField string
