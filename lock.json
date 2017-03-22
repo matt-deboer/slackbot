@@ -10,7 +10,7 @@
             ]
         },
         {
-            "name": "github.com/trinchan/slackbot",
+            "name": "github.com/matt-deboer/slackbot",
             "branch": "master",
             "revision": "777e82ac89fbba71bc64c02e48aba7062b773c8e",
             "packages": [
